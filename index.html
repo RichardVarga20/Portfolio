@@ -1,69 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varga Richard - Portfolio</title>
+    <title>Portfólió</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            padding-top: 80px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: linear-gradient(90deg, rgb(39, 47, 60) 50%, rgb(0, 0, 0) 100%);
+        }
+
+        .hero {
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero-background.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            height: 100px;
+        }
+
+        .hero h1 {
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: linear-gradient(45deg, #333, #555);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        footer:hover {
+            background: linear-gradient(45deg, #555, #333);
+        }
+    </style>
 </head>
 <body>
-    <header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <h1>Varga Richard</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Rólam</a></li>
-                    <li><a href="#portfolio">Portfólió</a></li>
-                    <li><a href="#contact">Kapcsolat</a></li>
+            <a class="navbar-brand" href="#">Portfólió</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                 </ul>
-            </nav>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Üdv a portfóliómon!</h1>
+            <p>Itt megtalálhatóak a projektjeim.</p>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>Rólam</h2>
-            <p>Szia! Én Varga Richard vagyok. Az alábbiakban bemutatom néhány munkámat és projektjeimet.</p>
+    <!-- Projects Section -->
+<section id="projects" class="py-5" style="background: linear-gradient(to bottom, #564b65, #351a12, #fad0c4);">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color: white; text-shadow: 2px 2px 4px black, 0 0 25px #fff, 0 0 5px darkgray;">Projektjeim</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projekt 1</h5>
+                        <p class="card-text">Állatok</p>
+                        <a href="https://richardvarga20.github.io/oraifeladat1/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projekt 2</h5>
+                        <p class="card-text">Bevásárlólista</p>
+                        <a href="https://richardvarga20.github.io/bevasarlolista/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projekt 3</h5>
+                        <p class="card-text">Számológép</p>
+                        <a href="https://richardvarga20.github.io/szamologep/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projekt 4</h5>
+                        <p class="card-text">Sötét/Világos gomb</p>
+                        <a href="https://richardvarga20.github.io/sotetvilagosgomb/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projekt 5</h5>
+                        <p class="card-text">Hotel foglaló oldal (Folyamatban)</p>
+                        <a href="https://richardvarga20.github.io/hotel/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projekt 6</h5>
+                        <p class="card-text">Bejelentkezés és regisztráció panel</p>
+                        <a href="https://richardvarga20.github.io/bejelentkezesesregisztracio/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                    </div>  
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfólió</h2>
-            <div class="portfolio-item">
-                <a href="https://richardvarga20.github.io/oraifeladat1/" target="_blank">GitHub Projekt 1 - Órai</a>                
-            </div>
-            <div class="portfolio-item">
-                <a href="https://richardvarga20.github.io/bevasarlolista/" target="_blank">GitHub Projekt 2 - Bevásárlólista </a>
-                
-            </div>
-
-            <div class=portfolio-item">
-                <a href="https://richardvarga20.github.io/szamologep/" target="_blank">GitHub Projekt 3 - Számológép</a>
-            </div>
-            <div class="portfolio-item">
-                    <a href="https://richardvarga20.github.io/sotetvilagosgomb/" target="_blank">Otthoni projekt 1 - Világos sötét téma gomb</a>
-            </div>
-            <div class="portfolio-item">
-                    <a href="https://richardvarga20.github.io/hotel/" target="_blank">Otthoni projekt 2 - Hotel foglalás projekt - Folyamatban</a>
-            </div>
-            <div class="portfolio-item">
-                <a href="https://richardvarga20.github.io/bejelentkezesesregisztracio/" target="_blank">Otthoni projekt 3 - Bejelentkezés és Regisztráció</a>                
-            </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Kapcsolat</h2>
-            <p>Ha szeretnél kapcsolatba lépni velem, kérlek, küldj egy e-mailt az alábbi címre:</p>
-            <p><a href="mailto:varga.richard@example.com">ryandesigns302@gmail.com</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Varga Richard. Minden jog fenntartva.</p>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Varga Richárd portfólió.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
