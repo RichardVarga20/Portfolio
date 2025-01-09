@@ -28,7 +28,10 @@
             color: white;
             padding: 80px 20px;
             text-align: center;
-            height: 100px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .hero h1 {
@@ -51,6 +54,7 @@
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100%;
         }
 
         .project-card:hover {
@@ -96,85 +100,85 @@
     </header>
 
     <!-- Projects Section -->
-<section id="projects" class="py-5" style="background: linear-gradient(to bottom, #564b65, #351a12, #fad0c4);">
-    <div class="container">
-        <h2 class="text-center mb-4" style="color: white; text-shadow: 2px 2px 4px black, 0 0 25px #fff, 0 0 5px darkgray;">Projektjeim</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projekt 1</h5>
-                        <p class="card-text">Állatok</p>
-                        <a href="https://richardvarga20.github.io/oraifeladat1/" class="btn btn-secondary" target="_blank">GitHub link</a>
+    <section id="projects" class="py-5" style="background: linear-gradient(to bottom, #564b65, #351a12, #fad0c4);">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: white; text-shadow: 2px 2px 4px black, 0 0 25px #fff, 0 0 5px darkgray;">Projektjeim</h2>
+            <div class="row g-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projekt 1</h5>
+                            <p class="card-text flex-grow-1">Állatok</p>
+                            <a href="https://richardvarga20.github.io/oraifeladat1/" class="btn btn-secondary mt-auto" target="_blank">GitHub link</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projekt 2</h5>
-                        <p class="card-text">Bevásárlólista</p>
-                        <a href="https://richardvarga20.github.io/bevasarlolista/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projekt 2</h5>
+                            <p class="card-text flex-grow-1">Bevásárlólista</p>
+                            <a href="https://richardvarga20.github.io/bevasarlolista/" class="btn btn-secondary mt-auto" target="_blank">GitHub link</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projekt 3</h5>
-                        <p class="card-text">Számológép</p>
-                        <a href="https://richardvarga20.github.io/szamologep/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projekt 3</h5>
+                            <p class="card-text flex-grow-1">Számológép</p>
+                            <a href="https://richardvarga20.github.io/szamologep/" class="btn btn-secondary mt-auto" target="_blank">GitHub link</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projekt 4</h5>
-                        <p class="card-text">Sötét/Világos gomb</p>
-                        <a href="https://richardvarga20.github.io/sotetvilagosgomb/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projekt 4</h5>
+                            <p class="card-text flex-grow-1">Sötét/Világos gomb</p>
+                            <a href="https://richardvarga20.github.io/sotetvilagosgomb/" class="btn btn-secondary mt-auto" target="_blank">GitHub link</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projekt 5</h5>
-                        <p class="card-text">Hotel foglaló oldal (Folyamatban)</p>
-                        <a href="https://richardvarga20.github.io/hotel/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projekt 5</h5>
+                            <p class="card-text flex-grow-1">Hotel foglaló oldal (Folyamatban)</p>
+                            <a href="https://richardvarga20.github.io/hotel/" class="btn btn-secondary mt-auto" target="_blank">GitHub link</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projekt 6</h5>
-                        <p class="card-text">Bejelentkezés és regisztráció panel</p>
-                        <a href="https://richardvarga20.github.io/bejelentkezesesregisztracio/" class="btn btn-secondary" target="_blank">GitHub link</a>
-                    </div>  
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projekt 6</h5>
+                            <p class="card-text flex-grow-1">Bejelentkezés és regisztráció panel</p>
+                            <a href="https://richardvarga20.github.io/bejelentkezesesregisztracio/" class="btn btn-secondary mt-auto" target="_blank">GitHub link</a>
+                        </div>  
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-            <div class="card project-card">
-                <div class="card-body">
-                    <h5 class="card-title">Projekt 7</h5>
-                    <p class="card-text">Órarend</p>
-                    <a href="https://richardvarga20.github.io/Orarend/" class="btn btn-secondary" target="_blank">GitHub link</a>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projekt 7</h5>
+                            <p class="card-text flex-grow-1">Órarend</p>
+                            <a href="https://richardvarga20.github.io/Orarend/" class="btn btn-secondary mt-auto" target="_blank">GitHub link</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-                <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Projekt 8</h5>
-                        <p class="card-text">Tetris</p>
-                        <a href="https://richardvarga20.github.io/tetris/" class="btn btn-secondary" target="_blank">GitHub link</a>
-                    </div>  
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projekt 8</h5>
+                            <p class="card-text flex-grow-1">Tetris</p>
+                            <a href="https://richardvarga20.github.io/tetris/" class="btn btn-secondary mt-auto" target="_blank">GitHub link</a>
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
